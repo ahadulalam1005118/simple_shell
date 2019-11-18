@@ -1,0 +1,25 @@
+To build:
+myls: Go to project_path/External
+      make clean
+      make all
+shell: Go to project path
+       make clean
+       make all
+       set MYPATH=project_path/External/output
+       ./output/out to run the executable
+
+
+Features supported by the shell:
+1. The shell supports the four built-in commands "exit", "cd", "pwd" and "set".
+2. The shell terminates if end of file character (CTRL-D) is encountered.
+3. myls has been implemented.
+4. The shell supports all external commands. execvp commands have been used to execute
+those.
+5. The shell supports multiple piping.
+6. The shell supports I/O redirections
+7. Background processes are also supported without Job Control.
+
+
+Limitations:
+Run Background process with application level command such as mousepad &, gedit & or firefox &
+In my ls implementation the columns are sometimes not in arrangement.
